@@ -4,7 +4,7 @@ import livingImage from "../assets/download-1.png";
 import amenitiesImage from "../assets/download-2.png";
 import viewImage from "../assets/download-1.png";
 import lifestyleImage from "../assets/download-2.png";
-import { FaLocationArrow, FaGem, FaTree } from "react-icons/fa";
+import { FaLocationArrow, FaGem, FaChartLine } from "react-icons/fa";
 import gallery1 from "../assets/gallery-1.png";
 import gallery2 from "../assets/gallery-2.png";
 import gallery3 from "../assets/gallery-3.png";
@@ -22,7 +22,7 @@ const Home = () => {
   <div className="absolute inset-0">
     <img
       src={heroImage}
-      alt="Riverside Residences"
+      alt="Aduri Group Projects"
       className="w-full h-full object-cover"
     />
 
@@ -35,22 +35,21 @@ const Home = () => {
     <div className="max-w-7xl mx-auto px-4 lg:px-8">
       <div className="max-w-2xl text-white pt-16 pl-4 sm:pl-8 lg:pl-16">
         <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
-          Riverside Residences
+          Aduri Group Projects
         </h1>
 
         <h2 className="text-xl lg:text-2xl font-medium text-gray-200 mb-6">
-          Luxury Waterfront Living in the Heart of the City
+          Building Trusted Landmarks. Creating Future-Ready Communities.
         </h2>
 
         <p className="text-gray-300 text-lg leading-relaxed mb-12">
-          Experience the perfect blend of urban convenience and natural serenity
-          with our premium waterfront apartments offering breathtaking views and
-          world-class amenities.
+          Experience premium plotted developments across Telangana with DTCP / RERA approvals, clear titles, and high-growth locations.<br/>
+          ✔ Open Plots | ✔ Wellness Townships | ✔ Highway-Facing Projects | ✔ Ideal for Investment & Construction
         </p>
 
         <div className="flex gap-5">
           <button className="bg-primary hover:bg-primaryDark text-white px-8 py-3.5 rounded-md shadow-lg transition">
-            Get Pricing
+            View Projects
           </button>
 
           <button className="bg-white text-primary border border-primary px-8 py-3.5 rounded-md shadow-lg hover:bg-slate-50 transition">
@@ -70,42 +69,39 @@ const Home = () => {
       {/* Feature 1 */}
       <div className="bg-slate-50 rounded-xl p-8">
         <div className="flex items-center gap-3 mb-4">
-          <FaLocationArrow className="text-primary text-lg" />
+          <FaGem className="text-primary text-lg" />
           <h3 className="text-lg font-semibold text-slate-900">
-            Prime Location
+            Legally Approved Projects
           </h3>
         </div>
         <p className="text-slate-600 leading-relaxed">
-          Located just minutes from downtown with direct access to major
-          highways and public transportation.
+          DTCP / MUDA / RERA-approved layouts ensure complete peace of mind and secure investment.
         </p>
       </div>
 
       {/* Feature 2 */}
       <div className="bg-slate-50 rounded-xl p-8">
         <div className="flex items-center gap-3 mb-4">
-          <FaGem className="text-primary text-lg" />
+          <FaLocationArrow className="text-primary text-lg" />
           <h3 className="text-lg font-semibold text-slate-900">
-            Luxury Finishes
+            Strategic Locations
           </h3>
         </div>
         <p className="text-slate-600 leading-relaxed">
-          Premium materials and fixtures throughout, including Italian marble,
-          hardwood floors, and designer appliances.
+          Projects located near highways, growth corridors, temples, IT & industrial hubs.
         </p>
       </div>
 
       {/* Feature 3 */}
       <div className="bg-slate-50 rounded-xl p-8">
         <div className="flex items-center gap-3 mb-4">
-          <FaTree className="text-primary text-lg" />
+          <FaChartLine className="text-primary text-lg" />
           <h3 className="text-lg font-semibold text-slate-900">
-            Green Spaces
+            High ROI Potential
           </h3>
         </div>
         <p className="text-slate-600 leading-relaxed">
-          Over 5 acres of landscaped gardens and walking paths along the
-          riverside for residents to enjoy.
+          Designed for long-term appreciation with infrastructure-ready development.
         </p>
       </div>
 
