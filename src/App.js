@@ -7,7 +7,7 @@ import FAQ from "./pages/FAQ's";
 import Contact from "./pages/Contact";
 
 // Project pages
-import RiversideResidences from "./pages/projects/RiversideResidences";
+import GoldenHeightsRajapur from "./pages/projects/RiversideResidences";
 import GoldenHeightsShad from "./pages/projects/GoldenHeightsShad";
 import GoldenHeightsSada from "./pages/projects/GoldenHeightsSada";
 import GoldenHeightsBudh from "./pages/projects/GoldenHeightsBudh";
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
 
           {/* PROJECTS */}
-          <Route path="/projects/riverside-residences" element={<RiversideResidences />} />
+          <Route path="/projects/rajapur" element={<GoldenHeightsRajapur />} />
           <Route path="/projects/shadnagar" element={<GoldenHeightsShad />} />
           <Route path="/projects/sadasivapet" element={<GoldenHeightsSada />} />
           <Route path="/projects/budhera" element={<GoldenHeightsBudh />} />

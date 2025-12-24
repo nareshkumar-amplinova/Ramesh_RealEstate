@@ -1,18 +1,13 @@
 import React from "react";
 import {
   FaRoad,
-  FaSchool,
-  FaHospital,
-  FaBuilding,
-  FaShoppingCart,
+  FaCity,
   FaMapMarkerAlt,
   FaLocationArrow,
   FaPlane,
-  FaTrain,
-  FaSubway,
-  FaBus,
+  FaIndustry,
 } from "react-icons/fa";
-
+import { MdOutlineTraffic } from "react-icons/md";
 import heroImage from "../../assets/download-1.png";
 import locationMap from "../../assets/location.png";
 import microsoftImg from "../../assets/Microsoft.png";
@@ -50,17 +45,15 @@ const GoldenHeightsBudh = () => {
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="max-w-2xl text-white pt-16 pl-4 sm:pl-8 lg:pl-16">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-                Golden Heights – Patloor, Budhera
+                Aduri’s Golden Heights – Patloor, Budhera
               </h1>
 
               <h2 className="text-xl lg:text-2xl text-gray-200 mb-6">
-                DTCP & RERA Approved Open Plots | High ROI Zone
+                DTCP & RERA Approved Premium Open Plots | Sadasivapet
               </h2>
 
               <p className="text-gray-300 text-lg mb-12">
-                Compact 7-acre project with excellent road visibility on Shankarpally–Momipet Road. Best suited for investors, weekend homes & future villas.<br/> 
-                Limited Plots Available
-
+                A premium 7-acre DTCP & RERA-approved open-plotted development located in the fast-growing corridor of Patloor, Budhera, Sadasivapet. Strategically positioned with excellent road visibility and seamless connectivity, making it ideal for high-ROI investment and future residential use.
               </p>
 
               <div className="flex gap-5">
@@ -86,7 +79,7 @@ const GoldenHeightsBudh = () => {
         Location Advantages
       </h2>
       <p className="text-slate-600 max-w-2xl mx-auto">
-        Strategic location offering excellent connectivity and convenience for residents
+        Located in a rapidly developing investment corridor offering strong connectivity, infrastructure growth, and long-term appreciation.
       </p>
     </div>
 
@@ -103,33 +96,27 @@ const GoldenHeightsBudh = () => {
     {[
       {
         icon: <FaRoad />,
-        title: "Near Highway/ORR",
+        title: "Excellent Road Visibility",
         desc:
-          "Just 1.5 km from Outer Ring Road, providing excellent connectivity to major business districts and IT parks",
+          "Situated on Shankarpally–Momipet Road, providing easy access and strong frontage.",
       },
       {
-        icon: <FaSchool />,
-        title: "Close to Schools",
+        icon: <FaRoad />,
+        title: "Close to Mumbai National Highway (NH-65)",
         desc:
-          "Within 3 km radius of prestigious educational institutions including Delhi Public School, Oakridge International, and Ryan International School",
+          "Quick connectivity to NH-65 ensures smooth travel to Hyderabad and surrounding hubs.",
       },
       {
-        icon: <FaHospital />,
-        title: "Nearby Hospitals",
+        icon: <FaIndustry />,
+        title: "Near Industrial & Residential Growth Zones",
         desc:
-          "2.5 km from Apollo Hospitals and 4 km from Care Hospitals, ensuring quick access to quality healthcare",
+          "Surrounded by expanding industrial, commercial, and residential developments.",
       },
       {
-        icon: <FaBuilding />,
-        title: "IT Hubs",
+        icon: <FaCity />,
+        title: "Proximity to Hyderabad City",
         desc:
-          "5 km from HITEC City and 7 km from Financial District, making it ideal for IT professionals",
-      },
-      {
-        icon: <FaShoppingCart />,
-        title: "Shopping & Entertainment",
-        desc:
-          "3 km from Inorbit Mall and 4.5 km from Forum Sujana Mall, offering premium shopping and entertainment options",
+          "Well-connected routes enable easy access to Hyderabad for work and lifestyle needs.",
       },
     ].map((item, index) => (
       <div key={index} className="flex items-start gap-5">
@@ -172,7 +159,7 @@ const GoldenHeightsBudh = () => {
 
         <p className="text-slate-500 flex items-center gap-2 text-sm">
           <FaMapMarkerAlt className="text-primary" />
-          Project Location: Financial District Road, Gachibowli, Hyderabad – 500032
+          Project Location: Patloor, Budhera, Sadasivapet, Sangareddy District – Telangana
         </p>
       </div>
 
@@ -196,31 +183,38 @@ const GoldenHeightsBudh = () => {
 
       {[
         {
-          icon: <FaPlane />,
-          title: "Airport",
-          subtitle: "Rajiv Gandhi International Airport",
-          distance: "25 km",
+          icon: <FaRoad />,
+          title: "Road",
+          subtitle: "Shankarpally–Momipet Road",
+          distance: "Adjacent",
           progress: "w-[25%]",
         },
         {
-          icon: <FaTrain />,
-          title: "Railway Station",
-          subtitle: "Secunderabad Railway Station",
-          distance: "18 km",
+          icon: <FaRoad />,
+          title: "Highway",
+          subtitle: "Mumbai National Highway (NH-65)",
+          distance: "Approx. 5–10 mins",
           progress: "w-[40%]",
         },
         {
-          icon: <FaSubway />,
-          title: "Metro Station",
-          subtitle: "Raidurg Metro Station",
-          distance: "4.5 km",
+          icon: <FaCity />,
+          title: "Town",
+          subtitle: "Sadasivapet Town",
+          distance: "Approx. 15 mins",
           progress: "w-[70%]",
         },
         {
-          icon: <FaBus />,
-          title: "Bus Terminal",
-          subtitle: "Gachibowli Bus Terminal",
-          distance: "3 km",
+          icon: <MdOutlineTraffic />,
+          title: "ORR",
+          subtitle: "Outer Ring Road (ORR)",
+          distance: "Approx. 25–30 mins",
+          progress: "w-[85%]",
+        },
+        {
+          icon: <FaPlane />,
+          title: "Airport",
+          subtitle: "RGIA Airport",
+          distance: "Approx. 60 mins",
           progress: "w-[85%]",
         },
       ].map((item, index) => (
@@ -272,39 +266,39 @@ const GoldenHeightsBudh = () => {
       {[
         {
           img: microsoftImg,
-          title: "Microsoft Campus",
+          title: "Shankarpally–Momipet Road",
           dist: "5.2 km",
-          desc: "One of the largest Microsoft development centers outside the US, employing thousands of IT professionals.",
+          desc: "High-visibility corridor enhancing accessibility and investment appeal.",
         },
         {
           img: inorbitImg,
-          title: "Inorbit Mall",
+          title: "Mumbai National Highway (NH-65)",
           dist: "3 km",
-          desc: "Premium shopping destination with international brands, multiplex, food court and entertainment zones.",
+          desc: "Major highway offering fast connectivity and long-term growth potential.",
         },
         {
           img: apolloImg,
-          title: "Apollo Hospitals",
+          title: "Sadasivapet Town",
           dist: "2.5 km",
-          desc: "Multi-specialty hospital with state-of-the-art facilities and emergency services available 24/7.",
+          desc: "Nearby town with schools, hospitals, markets, and daily amenities.",
         },
         {
           img: schoolImg,
-          title: "Delhi Public School",
+          title: "Industrial Growth Belt",
           dist: "2.8 km",
-          desc: "CBSE-affiliated school offering quality education from kindergarten to higher secondary levels.",
+          desc: "Surrounding industrial units are driving employment and residential demand.",
         },
         {
           img: financialImg,
-          title: "Financial District",
+          title: "Residential Development Zone",
           dist: "7 km",
-          desc: "Business hub housing major banks, financial institutions and corporate offices of multinational companies.",
+          desc: "Emerging residential layouts are increasing land value appreciation.",
         },
         {
           img: lakeImg,
-          title: "Durgam Cheruvu Lake",
+          title: "Hyderabad Access Corridor",
           dist: "6.5 km",
-          desc: "Picturesque lake offering boating facilities, walking trails and recreational activities for families.",
+          desc: "Well-connected routes provide smooth access to Hyderabad city.",
         },
       ].map((item, i) => (
         <div key={i} className="space-y-4 max-w-sm mx-auto">
@@ -413,12 +407,11 @@ const GoldenHeightsBudh = () => {
       {/* LEFT CONTENT */}
       <div className="text-white">
         <h3 className="text-2xl font-bold mb-3">
-          Experience the Location Advantage
+          Ready to Invest in a High-ROI Growth Corridor?
         </h3>
 
         <p className="text-sm text-white/80 mb-6 max-w-md">
-          Schedule a site visit to experience the strategic location and
-          connectivity advantages of our project.
+          Schedule a site visit to explore Aduri’s Golden Heights – Patloor, Budhera and secure your premium open plot in a fast-appreciating location.
         </p>
 
         {/* FORM CARD */}

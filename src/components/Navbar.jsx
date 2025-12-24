@@ -9,6 +9,14 @@ import {
 } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
 
+const projectsList = [
+  { label: "Golden Heights – Rajapur", path: "rajapur" },
+  { label: "Golden Heights – Health Village, Shadnagar", path: "shadnagar" },
+  { label: "Golden Heights – Budhera, Sadasivapet", path: "sadasivapet" },
+  { label: "Golden Heights – Patloor, Budhera", path: "budhera" },
+  { label: "Aduri’s Aabharana @ Yadadri", path: "aabharana" },
+];
+
 const Navbar = () => {
   const [openProjects, setOpenProjects] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -16,17 +24,12 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setOpenProjects(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
-    return () =>
-      document.removeEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const linkClass = ({ isActive }) =>
@@ -38,21 +41,15 @@ const Navbar = () => {
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center h-20">
-
           {/* LOGO */}
           <NavLink to="/" className="flex items-center gap-2">
             <FaBuilding className="text-primary text-2xl" />
-            <span className="font-bold text-lg text-primary">
-              Real Estate Project
-            </span>
+            <span className="font-bold text-lg text-primary">Real Estate Project</span>
           </NavLink>
 
           {/* DESKTOP MENU */}
           <div className="hidden lg:flex gap-8 text-sm font-medium items-center">
-
-            <NavLink to="/" className={linkClass}>
-              Home
-            </NavLink>
+            <NavLink to="/" className={linkClass}>Home</NavLink>
 
             {/* PROJECTS DROPDOWN */}
             <div className="relative" ref={dropdownRef}>
@@ -61,46 +58,28 @@ const Navbar = () => {
                 className="flex items-center gap-1 text-slate-600 hover:text-primary transition"
               >
                 Projects
-                <FaChevronDown
-                  className={`text-xs transition ${
-                    openProjects ? "rotate-180" : ""
-                  }`}
-                />
+                <FaChevronDown className={`text-xs transition ${openProjects ? "rotate-180" : ""}`} />
               </button>
 
               {openProjects && (
                 <div className="absolute top-full left-0 mt-3 w-64 bg-white border border-slate-200 rounded-lg shadow-lg overflow-hidden z-50">
-                  {[
-                    "riverside-residences",
-                    "golden Heights – Health Village, Shadnagar",
-                    "golden Heights – Budhera, Sadasivapet",
-                    "golden Heights – Patloor, Budhera",
-                    "aduri’s Aabharana @ Yadadri"
-                  ].map((item) => (
+                  {projectsList.map((project) => (
                     <NavLink
-                      key={item}
-                      to={`/projects/${item}`}
+                      key={project.path}
+                      to={`/projects/${project.path}`}
                       onClick={() => setOpenProjects(false)}
                       className="block px-5 py-3 text-sm hover:bg-slate-50"
                     >
-                      {item.replace("-", " ").toUpperCase()}
+                      {project.label}
                     </NavLink>
                   ))}
                 </div>
               )}
             </div>
 
-            <NavLink to="/aboutus" className={linkClass}>
-              About Us
-            </NavLink>
-
-            <NavLink to="/faqs" className={linkClass}>
-              FAQs
-            </NavLink>
-
-            <NavLink to="/contact" className={linkClass}>
-              Contact
-            </NavLink>
+            <NavLink to="/aboutus" className={linkClass}>About Us</NavLink>
+            <NavLink to="/faqs" className={linkClass}>FAQs</NavLink>
+            <NavLink to="/contact" className={linkClass}>Contact</NavLink>
           </div>
 
           {/* DESKTOP ACTIONS */}
@@ -113,10 +92,7 @@ const Navbar = () => {
           </div>
 
           {/* MOBILE TOGGLE */}
-          <button
-            className="lg:hidden text-2xl text-slate-700"
-            onClick={() => setIsMobileOpen(true)}
-          >
+          <button className="lg:hidden text-2xl text-slate-700" onClick={() => setIsMobileOpen(true)}>
             <FaBars />
           </button>
         </div>
@@ -126,18 +102,14 @@ const Navbar = () => {
       {isMobileOpen && (
         <div className="lg:hidden fixed inset-0 bg-white z-50 p-6 overflow-y-auto">
           <div className="flex justify-between items-center mb-6">
-            <span className="font-bold text-lg text-primary">
-              Real Estate Project
-            </span>
+            <span className="font-bold text-lg text-primary">Real Estate Project</span>
             <button onClick={() => setIsMobileOpen(false)}>
               <FaTimes className="text-2xl" />
             </button>
           </div>
 
           <nav className="space-y-4 text-sm font-medium">
-            <NavLink onClick={() => setIsMobileOpen(false)} to="/" className={linkClass}>
-              Home
-            </NavLink>
+            <NavLink onClick={() => setIsMobileOpen(false)} to="/" className={linkClass}>Home</NavLink>
 
             {/* MOBILE PROJECTS */}
             <div>
@@ -146,52 +118,33 @@ const Navbar = () => {
                 className="flex items-center gap-2 text-slate-600"
               >
                 Projects
-                <FaChevronDown
-                  className={`text-xs transition ${
-                    openProjects ? "rotate-180" : ""
-                  }`}
-                />
+                <FaChevronDown className={`text-xs transition ${openProjects ? "rotate-180" : ""}`} />
               </button>
 
               {openProjects && (
                 <div className="ml-4 mt-2 space-y-2">
-                  {[
-                    "riverside-residences",
-                    "skyline-heights",
-                    "green-valley",
-                    "ocean-view",
-                  ].map((item) => (
+                  {projectsList.map((project) => (
                     <NavLink
-                      key={item}
-                      to={`/projects/${item}`}
+                      key={project.path}
+                      to={`/projects/${project.path}`}
                       onClick={() => {
                         setIsMobileOpen(false);
                         setOpenProjects(false);
                       }}
                       className="block text-slate-600"
                     >
-                      {item.replace("-", " ").toUpperCase()}
+                      {project.label}
                     </NavLink>
                   ))}
                 </div>
               )}
             </div>
 
-            <NavLink onClick={() => setIsMobileOpen(false)} to="/aboutus" className={linkClass}>
-              About Us
-            </NavLink>
+            <NavLink onClick={() => setIsMobileOpen(false)} to="/aboutus" className={linkClass}>About Us</NavLink>
+            <NavLink onClick={() => setIsMobileOpen(false)} to="/faqs" className={linkClass}>FAQs</NavLink>
+            <NavLink onClick={() => setIsMobileOpen(false)} to="/contact" className={linkClass}>Contact</NavLink>
 
-            <NavLink onClick={() => setIsMobileOpen(false)} to="/faqs" className={linkClass}>
-              FAQs
-            </NavLink>
-
-            <NavLink onClick={() => setIsMobileOpen(false)} to="/contact" className={linkClass}>
-              Contact
-            </NavLink>
-
-            <button className="mt-6 w-full bg-primary text-white py-3 rounded-md">
-              Enquire Now
-            </button>
+            <button className="mt-6 w-full bg-primary text-white py-3 rounded-md">Enquire Now</button>
           </nav>
         </div>
       )}

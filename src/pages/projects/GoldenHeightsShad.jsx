@@ -1,18 +1,12 @@
 import React from "react";
 import {
   FaRoad,
-  FaSchool,
-  FaHospital,
-  FaBuilding,
-  FaShoppingCart,
+  FaCity,
   FaMapMarkerAlt,
   FaLocationArrow,
+  FaIndustry,
   FaPlane,
-  FaTrain,
-  FaSubway,
-  FaBus,
   FaChartLine, 
-  FaServer,  
   FaUniversity,
 } from "react-icons/fa";
 
@@ -172,7 +166,8 @@ const GoldenHeightsShad = () => {
 
         <p className="text-slate-500 flex items-center gap-2 text-sm">
           <FaMapMarkerAlt className="text-primary" />
-          Project Location: Balanagar, Near Shadnagar, Hyderabad – Telangana
+          Project Location:<br/>
+          Balanagar, Near Shadnagar, Hyderabad – Telangana
         </p>
       </div>
 
@@ -196,31 +191,31 @@ const GoldenHeightsShad = () => {
 
       {[
         {
-          icon: <FaPlane />,
-          title: "Airport",
-          subtitle: "Rajiv Gandhi International Airport",
-          distance: "25 km",
+          icon: <FaRoad />,
+          title: "Ring Road",
+          subtitle: "Proposed Regional Ring Road (RRR)",
+          distance: "Close Proximity",
           progress: "w-[25%]",
         },
         {
-          icon: <FaTrain />,
-          title: "Railway Station",
-          subtitle: "Secunderabad Railway Station",
-          distance: "18 km",
+          icon: <FaCity />,
+          title: "Town",
+          subtitle: "Shadnagar Town",
+          distance: "Approx. 15 mins",
           progress: "w-[40%]",
         },
         {
-          icon: <FaSubway />,
-          title: "Metro Station",
-          subtitle: "Raidurg Metro Station",
-          distance: "4.5 km",
+          icon: <FaUniversity />,
+          title: "University",
+          subtitle: "Symbiosis University",
+          distance: "Approx. 10–15 mins",
           progress: "w-[70%]",
         },
         {
-          icon: <FaBus />,
-          title: "Bus Terminal",
-          subtitle: "Gachibowli Bus Terminal",
-          distance: "3 km",
+          icon: <FaPlane />,
+          title: "Airport",
+          subtitle: "RGIA Airport",
+          distance: "Approx. 45–50 mins",
           progress: "w-[85%]",
         },
       ].map((item, index) => (
@@ -272,39 +267,39 @@ const GoldenHeightsShad = () => {
       {[
         {
           img: microsoftImg,
-          title: "Microsoft Campus",
+          title: "MS Data Center",
           dist: "5.2 km",
-          desc: "One of the largest Microsoft development centers outside the US, employing thousands of IT professionals.",
+          desc: "A major digital infrastructure hub boosting residential and investment demand.",
         },
         {
           img: inorbitImg,
-          title: "Inorbit Mall",
+          title: "Proposed Regional Ring Road (RRR)",
           dist: "3 km",
-          desc: "Premium shopping destination with international brands, multiplex, food court and entertainment zones.",
+          desc: "Future-ready connectivity corridor enhancing long-term land value.",
         },
         {
           img: apolloImg,
-          title: "Apollo Hospitals",
+          title: "Symbiosis University",
           dist: "2.5 km",
-          desc: "Multi-specialty hospital with state-of-the-art facilities and emergency services available 24/7.",
+          desc: "Upcoming educational institution attracting students, faculty, and residential growth.",
         },
         {
           img: schoolImg,
-          title: "Delhi Public School",
+          title: "Pharma SEZs & Industrial Corridors",
           dist: "2.8 km",
-          desc: "CBSE-affiliated school offering quality education from kindergarten to higher secondary levels.",
+          desc: "Employment-driven zones supporting sustained real estate appreciation.",
         },
         {
           img: financialImg,
-          title: "Financial District",
+          title: "Shadnagar Town",
           dist: "7 km",
-          desc: "Business hub housing major banks, financial institutions and corporate offices of multinational companies.",
+          desc: "Well-developed town with markets, hospitals, schools, and daily conveniences.",
         },
         {
           img: lakeImg,
-          title: "Durgam Cheruvu Lake",
+          title: "Shamshabad International Airport (RGIA)",
           dist: "6.5 km",
-          desc: "Picturesque lake offering boating facilities, walking trails and recreational activities for families.",
+          desc: "Smooth airport access supporting a premium lifestyle and investment appeal.",
         },
       ].map((item, i) => (
         <div key={i} className="space-y-4 max-w-sm mx-auto">
@@ -413,12 +408,11 @@ const GoldenHeightsShad = () => {
       {/* LEFT CONTENT */}
       <div className="text-white">
         <h3 className="text-2xl font-bold mb-3">
-          Experience the Location Advantage
+          Ready to Invest in a Wellness-Focused Lifestyle Community?
         </h3>
 
         <p className="text-sm text-white/80 mb-6 max-w-md">
-          Schedule a site visit to experience the strategic location and
-          connectivity advantages of our project.
+          Schedule a site visit to experience <span className="text-bold">Aduri’s Golden Heights – Health Village Wellness Center</span> and secure your premium plot in a future-ready wellness township.
         </p>
 
         {/* FORM CARD */}
@@ -501,13 +495,12 @@ const GoldenHeightsShad = () => {
           {/* LEFT CONTENT */}
           <div className="p-10 lg:p-14">
             <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
-              Ready to Invest in a High-Growth Location?
+              Ready to Invest in a Wellness-Focused Lifestyle Community?
 
             </h2>
 
             <p className="text-slate-600 text-lg leading-relaxed mb-10 max-w-xl">
-              Schedule a site visit to explore Aduri’s Golden Heights @ Rajapur and secure your premium plot at an early-stage price.
-
+              Schedule a site visit to experience Aduri’s Golden Heights – Health Village Wellness Center and secure your premium plot in a future-ready wellness township.
             </p>
 
             <div className="flex flex-wrap gap-4">

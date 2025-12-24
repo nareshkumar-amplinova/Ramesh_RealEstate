@@ -1,17 +1,15 @@
 import React from "react";
 import {
-  FaRoad,
-  FaSchool,
-  FaHospital,
-  FaBuilding,
-  FaShoppingCart,
+  FaDraftingCompass,
   FaMapMarkerAlt,
   FaLocationArrow,
-  FaPlane,
-  FaTrain,
-  FaSubway,
-  FaBus,
+  FaRoad,
+  FaCity,
+  FaMonument,
 } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
+import { AiOutlineShareAlt } from "react-icons/ai";
+import { MdOutlineHomeWork } from "react-icons/md";
 
 import heroImage from "../../assets/download-1.png";
 import locationMap from "../../assets/location.png";
@@ -54,12 +52,12 @@ const AdurisAabharana = () => {
               </h1>
 
               <h2 className="text-xl lg:text-2xl text-gray-200 mb-6">
-                DTCP-Approved Open Plots Near Yadadri Temple
+                DTCP-Approved Premium Open Plots | Near Yadadri Temple
               </h2>
 
               <p className="text-gray-300 text-lg mb-12">
-                Construction-ready, Vaastu-compliant plots in a spiritually significant and fast-developing region near Hyderabad.<br/>
-                Divine Living | Smart Investment
+                A prestigious <span className="font-bold">DTCP-approved open plots venture by Aduri Infra Pvt. Ltd.,</span> located close to the sacred
+                <span className="font-bold"> Yadadri Temple</span>. Designed for peaceful living and smart investment, this project offers construction-ready, Vaastu-compliant plots in one of the fastest-growing spiritual and residential corridors near Hyderabad.
               </p>
 
               <div className="flex gap-5">
@@ -85,7 +83,7 @@ const AdurisAabharana = () => {
         Location Advantages
       </h2>
       <p className="text-slate-600 max-w-2xl mx-auto">
-        Strategic location offering excellent connectivity and convenience for residents
+        Perfectly positioned to offer spiritual serenity, strong connectivity, and long-term investment growth.
       </p>
     </div>
 
@@ -101,34 +99,28 @@ const AdurisAabharana = () => {
   <div className="space-y-8">
     {[
       {
-        icon: <FaRoad />,
-        title: "Near Highway/ORR",
+        icon: <MdLocationOn />,
+        title: "Close to Yadadri Temple",
         desc:
-          "Just 1.5 km from Outer Ring Road, providing excellent connectivity to major business districts and IT parks",
+          "Located near the famous Yadadri Temple, it ensures high demand and cultural significance.",
       },
       {
-        icon: <FaSchool />,
-        title: "Close to Schools",
+        icon: <AiOutlineShareAlt />,
+        title: "Smooth Regional Connectivity",
         desc:
-          "Within 3 km radius of prestigious educational institutions including Delhi Public School, Oakridge International, and Ryan International School",
+          "Well-connected roads link Rajapet, Mothkur, Aler Junction, and the surrounding regions.",
       },
       {
-        icon: <FaHospital />,
-        title: "Nearby Hospitals",
+        icon: <MdOutlineHomeWork />,
+        title: "Fast-Developing Residential Corridor",
         desc:
-          "2.5 km from Apollo Hospitals and 4 km from Care Hospitals, ensuring quick access to quality healthcare",
+          "Growing residential demand is supported by infrastructure expansion near Hyderabad.",
       },
       {
-        icon: <FaBuilding />,
-        title: "IT Hubs",
+        icon: <FaDraftingCompass />,
+        title: "Ideal for Construction & Living",
         desc:
-          "5 km from HITEC City and 7 km from Financial District, making it ideal for IT professionals",
-      },
-      {
-        icon: <FaShoppingCart />,
-        title: "Shopping & Entertainment",
-        desc:
-          "3 km from Inorbit Mall and 4.5 km from Forum Sujana Mall, offering premium shopping and entertainment options",
+          "Construction-ready plots suitable for immediate home building or long-term holding.",
       },
     ].map((item, index) => (
       <div key={index} className="flex items-start gap-5">
@@ -171,7 +163,8 @@ const AdurisAabharana = () => {
 
         <p className="text-slate-500 flex items-center gap-2 text-sm">
           <FaMapMarkerAlt className="text-primary" />
-          Project Location: Financial District Road, Gachibowli, Hyderabad – 500032
+          Project Location: Near Yadadri Temple, Yadadri–Bhuvanagiri District – Telangana
+
         </p>
       </div>
 
@@ -195,32 +188,39 @@ const AdurisAabharana = () => {
 
       {[
         {
-          icon: <FaPlane />,
-          title: "Airport",
-          subtitle: "Rajiv Gandhi International Airport",
-          distance: "25 km",
+          icon: <FaMonument />,
+          title: "Temple",
+          subtitle: "Yadadri Temple",
+          distance: "Nearby",
           progress: "w-[25%]",
         },
         {
-          icon: <FaTrain />,
-          title: "Railway Station",
-          subtitle: "Secunderabad Railway Station",
-          distance: "18 km",
+          icon: <MdLocationOn />,
+          title: "Junction",
+          subtitle: "Aler Junction",
+          distance: "Approx. 15–20 mins",
           progress: "w-[40%]",
         },
         {
-          icon: <FaSubway />,
-          title: "Metro Station",
-          subtitle: "Raidurg Metro Station",
-          distance: "4.5 km",
+          icon: <FaCity />,
+          title: "City",
+          subtitle: "Mothkur",
+          distance: "Approx. 15 mins",
           progress: "w-[70%]",
         },
         {
-          icon: <FaBus />,
-          title: "Bus Terminal",
-          subtitle: "Gachibowli Bus Terminal",
-          distance: "3 km",
+          icon: <FaRoad />,
+          title: "Road",
+          subtitle: "Regional Road Connectivity",
+          distance: "Easy Access",
           progress: "w-[85%]",
+        },
+        {
+          icon: <FaCity />,
+          title: "City",
+          subtitle: "Hyderabad City",
+          distance: "Approx. 60–70 mins",
+          progress: "w-[70%]",
         },
       ].map((item, index) => (
         <div
@@ -271,39 +271,39 @@ const AdurisAabharana = () => {
       {[
         {
           img: microsoftImg,
-          title: "Microsoft Campus",
+          title: "Yadadri Temple",
           dist: "5.2 km",
-          desc: "One of the largest Microsoft development centers outside the US, employing thousands of IT professionals.",
+          desc: "Major spiritual destination driving residential and investment demand.",
         },
         {
           img: inorbitImg,
-          title: "Inorbit Mall",
+          title: "Aler Junction",
           dist: "3 km",
-          desc: "Premium shopping destination with international brands, multiplex, food court and entertainment zones.",
+          desc: "An important railway and road junction, improving regional accessibility.",
         },
         {
           img: apolloImg,
-          title: "Apollo Hospitals",
+          title: "Rajapet",
           dist: "2.5 km",
-          desc: "Multi-specialty hospital with state-of-the-art facilities and emergency services available 24/7.",
+          desc: "Nearby town with daily conveniences and local connectivity.",
         },
         {
           img: schoolImg,
-          title: "Delhi Public School",
+          title: "Mothkur",
           dist: "2.8 km",
-          desc: "CBSE-affiliated school offering quality education from kindergarten to higher secondary levels.",
+          desc: "Well-developed mandal with schools, markets, and healthcare facilities.",
         },
         {
           img: financialImg,
-          title: "Financial District",
+          title: "Kolamula Village",
           dist: "7 km",
-          desc: "Business hub housing major banks, financial institutions and corporate offices of multinational companies.",
+          desc: "Developing a residential locality to enhance land value appreciation.",
         },
         {
           img: lakeImg,
-          title: "Durgam Cheruvu Lake",
+          title: "Yadadri Growth Corridor",
           dist: "6.5 km",
-          desc: "Picturesque lake offering boating facilities, walking trails and recreational activities for families.",
+          desc: "Emerging residential and spiritual development zone near Hyderabad.",
         },
       ].map((item, i) => (
         <div key={i} className="space-y-4 max-w-sm mx-auto">
@@ -412,12 +412,12 @@ const AdurisAabharana = () => {
       {/* LEFT CONTENT */}
       <div className="text-white">
         <h3 className="text-2xl font-bold mb-3">
-          Experience the Location Advantage
+          Ready to Invest Where Faith Meets Future Growth?
         </h3>
 
         <p className="text-sm text-white/80 mb-6 max-w-md">
-          Schedule a site visit to experience the strategic location and
-          connectivity advantages of our project.
+          Schedule a site visit to explore <span className="text bold">Aduri’s Aabharana @ Yadadri</span> and secure your construction-ready plot in a spiritually significant location.
+
         </p>
 
         {/* FORM CARD */}
@@ -480,7 +480,7 @@ const AdurisAabharana = () => {
 
 {/* MAP */}
       <section className="mb-20">
-        <h3 className="text-center text-xl text-primary font-bold mb-6">Find Us on Map</h3>
+        <h3 className="text-center text-xl text-primary font-bold mb-6">Project Location: Near Yadadri Temple, Yadadri–Bhuvanagiri District – Telangana</h3>
 
         <div className="max-w-6xl mx-auto h-[350px] rounded-xl overflow-hidden">
           <iframe
