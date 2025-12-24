@@ -11,6 +11,9 @@ import {
   FaTrain,
   FaSubway,
   FaBus,
+  FaChartLine, 
+  FaServer,  
+  FaUniversity,
 } from "react-icons/fa";
 
 import heroImage from "../../assets/download-1.png";
@@ -30,7 +33,7 @@ import livingImg from "../../assets/gallery-3.png";
 import bedroomImg from "../../assets/gallery-4.png";
 
 
-const RiversideResidences = () => {
+const GoldenHeightsShad = () => {
   return (
     <>
       {/* ================= HERO ================= */}
@@ -50,17 +53,20 @@ const RiversideResidences = () => {
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="max-w-2xl text-white pt-16 pl-4 sm:pl-8 lg:pl-16">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-                Riverside Residences
+                Aduri’s Golden Heights – Health Village Wellness Center
               </h1>
 
               <h2 className="text-xl lg:text-2xl text-gray-200 mb-6">
-                Luxury Waterfront Living in the Heart of the City
+                Aduri’s Golden Heights – Health Village Wellness Center <br/>
+                Premium Wellness Township | Balanagar, Shadnagar
+
               </h2>
 
               <p className="text-gray-300 text-lg mb-12">
-                Experience the perfect blend of urban convenience and natural
-                serenity with premium waterfront apartments offering breathtaking
-                views and world-class amenities.
+                MUDA Approved 75-Acre Gated Residential Wellness Community with Open Plots, Luxury Villas & Future Apartments. Featuring a dedicated Ayurveda & Wellness Hub, 51+ lifestyle amenities, and future-ready infrastructure in a high-growth corridor.<br/>
+                Price: ₹20,299 / sq. yd
+
+
               </p>
 
               <div className="flex gap-5">
@@ -86,7 +92,7 @@ const RiversideResidences = () => {
         Location Advantages
       </h2>
       <p className="text-slate-600 max-w-2xl mx-auto">
-        Strategic location offering excellent connectivity and convenience for residents
+        Strategically located in a prime growth corridor offering excellent connectivity, lifestyle convenience, and long-term investment value.
       </p>
     </div>
 
@@ -103,33 +109,27 @@ const RiversideResidences = () => {
     {[
       {
         icon: <FaRoad />,
-        title: "Near Highway/ORR",
+        title: "Proposed Regional Ring Road (RRR)",
         desc:
-          "Just 1.5 km from Outer Ring Road, providing excellent connectivity to major business districts and IT parks",
+          "Located on the proposed RRR corridor, ensuring excellent future connectivity and appreciation.",
       },
       {
-        icon: <FaSchool />,
-        title: "Close to Schools",
+        icon: <FaChartLine />,
+        title: "Close to Shadnagar Growth Zone",
         desc:
-          "Within 3 km radius of prestigious educational institutions including Delhi Public School, Oakridge International, and Ryan International School",
+          "Situated near Shadnagar, a rapidly developing residential, industrial, and infrastructure hub.",
       },
       {
-        icon: <FaHospital />,
-        title: "Nearby Hospitals",
+        icon: <FaIndustry />,
+        title: "Near MS Data Center & Pharma SEZs",
         desc:
-          "2.5 km from Apollo Hospitals and 4 km from Care Hospitals, ensuring quick access to quality healthcare",
+          "Proximity to major data centers and pharma zones is driving employment and real estate demand.",
       },
       {
-        icon: <FaBuilding />,
-        title: "IT Hubs",
+        icon: <FaUniversity />,
+        title: "Upcoming Educational & Institutional Hub",
         desc:
-          "5 km from HITEC City and 7 km from Financial District, making it ideal for IT professionals",
-      },
-      {
-        icon: <FaShoppingCart />,
-        title: "Shopping & Entertainment",
-        desc:
-          "3 km from Inorbit Mall and 4.5 km from Forum Sujana Mall, offering premium shopping and entertainment options",
+          "Close to Symbiosis University and other upcoming educational institutions.",
       },
     ].map((item, index) => (
       <div key={index} className="flex items-start gap-5">
@@ -172,7 +172,7 @@ const RiversideResidences = () => {
 
         <p className="text-slate-500 flex items-center gap-2 text-sm">
           <FaMapMarkerAlt className="text-primary" />
-          Project Location: Financial District Road, Gachibowli, Hyderabad – 500032
+          Project Location: Balanagar, Near Shadnagar, Hyderabad – Telangana
         </p>
       </div>
 
@@ -501,21 +501,23 @@ const RiversideResidences = () => {
           {/* LEFT CONTENT */}
           <div className="p-10 lg:p-14">
             <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
-              Schedule a Site Visit
+              Ready to Invest in a High-Growth Location?
+
             </h2>
 
             <p className="text-slate-600 text-lg leading-relaxed mb-10 max-w-xl">
-              Experience our project firsthand. Schedule a site visit at your
-              convenient time and our representative will assist you.
+              Schedule a site visit to explore Aduri’s Golden Heights @ Rajapur and secure your premium plot at an early-stage price.
+
             </p>
 
             <div className="flex flex-wrap gap-4">
               <button className="bg-primary text-white px-8 py-3 rounded-lg font-medium shadow-sm hover:bg-primaryDark transition">
-                Book Site Visit
+                Request Site Visit
+
               </button>
 
               <button className="border border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-white transition">
-                Call Now
+                📞 Call / WhatsApp: +91 83742 49705
               </button>
             </div>
           </div>
@@ -536,4 +538,4 @@ const RiversideResidences = () => {
   );
 };
 
-export default RiversideResidences;
+export default GoldenHeightsShad;

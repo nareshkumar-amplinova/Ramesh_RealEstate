@@ -8,9 +8,10 @@ import Contact from "./pages/Contact";
 
 // Project pages
 import RiversideResidences from "./pages/projects/RiversideResidences";
-import SkylineHeights from "./pages/projects/SkylineHeights";
-import GreenValley from "./pages/projects/GreenValley";
-import OceanView from "./pages/projects/OceanView";
+import GoldenHeightsShad from "./pages/projects/GoldenHeightsShad";
+import GoldenHeightsSada from "./pages/projects/GoldenHeightsSada";
+import GoldenHeightsBudh from "./pages/projects/GoldenHeightsBudh";
+import AdurisAabharana from "./pages/projects/AduriAabharana";
 
 const App = () => {
   return (
@@ -21,9 +22,10 @@ const App = () => {
 
           {/* PROJECTS */}
           <Route path="/projects/riverside-residences" element={<RiversideResidences />} />
-          <Route path="/projects/skyline-heights" element={<SkylineHeights />} />
-          <Route path="/projects/green-valley" element={<GreenValley />} />
-          <Route path="/projects/ocean-view" element={<OceanView />} />
+          <Route path="/projects/shadnagar" element={<GoldenHeightsShad />} />
+          <Route path="/projects/sadasivapet" element={<GoldenHeightsSada />} />
+          <Route path="/projects/budhera" element={<GoldenHeightsBudh />} />
+          <Route path="/projects/aabharana" element={<AdurisAabharana />} />
 
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/faqs" element={<FAQ />} />

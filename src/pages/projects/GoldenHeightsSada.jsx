@@ -30,7 +30,7 @@ import livingImg from "../../assets/gallery-3.png";
 import bedroomImg from "../../assets/gallery-4.png";
 
 
-const RiversideResidences = () => {
+const GoldenHeightsSada = () => {
   return (
     <>
       {/* ================= HERO ================= */}
@@ -50,17 +50,18 @@ const RiversideResidences = () => {
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="max-w-2xl text-white pt-16 pl-4 sm:pl-8 lg:pl-16">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-                Riverside Residences
+                Golden Heights – Budhera, Sadasivapet
+
               </h1>
 
               <h2 className="text-xl lg:text-2xl text-gray-200 mb-6">
-                Luxury Waterfront Living in the Heart of the City
+                65-Acre DTCP Township | Mumbai NH-65
               </h2>
 
               <p className="text-gray-300 text-lg mb-12">
-                Experience the perfect blend of urban convenience and natural
-                serenity with premium waterfront apartments offering breathtaking
-                views and world-class amenities.
+                Highway-facing mega residential township near IIT Hyderabad, SEZs & industrial hubs. Perfect for both end-use and long-term investment. <br/>
+                Price: ₹20,299 / sq. yd
+
               </p>
 
               <div className="flex gap-5">
@@ -536,4 +537,4 @@ const RiversideResidences = () => {
   );
 };
 
-export default RiversideResidences;
+export default GoldenHeightsSada;

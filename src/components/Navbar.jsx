@@ -72,9 +72,10 @@ const Navbar = () => {
                 <div className="absolute top-full left-0 mt-3 w-64 bg-white border border-slate-200 rounded-lg shadow-lg overflow-hidden z-50">
                   {[
                     "riverside-residences",
-                    "skyline-heights",
-                    "green-valley",
-                    "ocean-view",
+                    "golden Heights – Health Village, Shadnagar",
+                    "golden Heights – Budhera, Sadasivapet",
+                    "golden Heights – Patloor, Budhera",
+                    "aduri’s Aabharana @ Yadadri"
                   ].map((item) => (
                     <NavLink
                       key={item}

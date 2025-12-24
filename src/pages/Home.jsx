@@ -116,11 +116,10 @@ const Home = () => {
     {/* Heading */}
     <div className="text-center max-w-3xl mx-auto mb-10">
       <h2 className="text-3xl md:text-4xl font-bold text-primary mb-3">
-        Experience Riverside Living
+        Explore Our Premium Projects
       </h2>
       <p className="text-slate-600 text-base md:text-lg leading-relaxed">
-        Our residences offer a perfect blend of luxury, comfort and convenience
-        with spectacular views and premium amenities.
+        Thoughtfully planned developments tailored for investors, families, and future homeowners.
       </p>
     </div>
 
@@ -181,37 +180,43 @@ const Home = () => {
         {[
           {
             img: livingImage,
-            title: "Modern Living Spaces",
+            title: "Aduri’s Golden Heights @ Rajapur",
             desc:
-              "Open concept floor plans with generous living areas and private balconies offering panoramic views.",
-            btn: "View Homes",
+              "Premium Open Plots | Near NH-44, Shadnagar. DTCP & TS RERA Approved plotted development just 1 km from Hyderabad–Bangalore Highway. Starting from ₹13,799 / sq. yd",
+            btn: "View Project",
           },
           {
             img: amenitiesImage,
-            title: "World-Class Amenities",
+            title: "Golden Heights – Health Village, Shadnagar",
             desc:
-              "Infinity pool, fitness center, spa, private theater, and 24/7 concierge services.",
-            btn: "View Amenities",
+              "75-Acre Wellness Township | Open Plots, Villas & Apartments. A landmark health-focused gated community featuring Ayurveda & Wellness Hub, 51+ lifestyle amenities, and future-ready infrastructure. Price: ₹20,299 / sq. yd",
+            btn: "View Project",
           },
           {
             img: viewImage,
-            title: "Scenic River Views",
+            title: "Golden Heights – Budhera, Sadasivapet",
             desc:
-              "Wake up to serene waterfront views and lush landscapes right outside your home.",
-            btn: "View Location",
+              "65-Acre DTCP Township | Mumbai NH-65 Highway-facing mega residential township near IIT Hyderabad, SEZs & industrial hubs. Perfect for both end-use and long-term investment. Price: ₹20,299 / sq. yd",
+            btn: "View Project",
           },
           {
             img: lifestyleImage,
-            title: "Premium Lifestyle",
+            title: "Golden Heights – Patloor, Budhera",
             desc:
-              "Designed for refined urban living with unmatched comfort and elegance.",
-            btn: "Explore Lifestyle",
+              "6DTCP & RERA Approved Open Plots | High ROI Zone Compact 7-acre project with excellent road visibility on Shankarpally–Momipet Road.Best suited for investors, weekend homes & future villas.Limited Plots Available",
+            btn: "View Project",
+          },
+          {
+            img: lifestyleImage,
+            title: "Aduri’s Aabharana @ Yadadri",
+            desc:
+              "DTCP-Approved Open Plots Near Yadadri Temple Construction-ready, Vaastu-compliant plots in a spiritually significant and fast-developing region near Hyderabad. Divine Living | Smart Investment",
+            btn: "View Project",
           },
         ].map((item, i) => (
           <div
             key={i}
-            className="min-w-[280px] sm:min-w-[320px] max-w-[320px]
-                       bg-white rounded-xl shadow-sm overflow-hidden"
+            className="min-w-[320px] bg-white rounded-2xl shadow-md flex flex-col"
           >
             {/* Image */}
             <img
@@ -221,16 +226,16 @@ const Home = () => {
             />
 
             {/* Content */}
-            <div className="p-5 text-center">
-              <h3 className="text-base font-semibold text-primary mb-2">
+            <div className="p-5 text-center flex flex-col h-full">
+              <h3 className="text-base font-semibold text-primary mb-2 min-h-[44px]">
                 {item.title}
               </h3>
 
-              <p className="text-sm text-slate-600 leading-relaxed mb-4">
+              <p className="text-sm text-slate-600 leading-relaxed line-clamp-4 min-h-[88px]">
                 {item.desc}
               </p>
 
-              <button className="bg-primary text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-primaryDark transition">
+              <button className="mt-auto bg-primary text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-primaryDark transition">
                 {item.btn}
               </button>
             </div>
@@ -639,12 +644,13 @@ const Home = () => {
 <section className="pt-10 pb-20 bg-white">
   <div className="max-w-4xl mx-auto px-4 lg:px-8 text-center">
     <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-      Ready to Experience Riverside Living?
+      Ready to Invest with Confidence?
     </h2>
 
     <p className="text-slate-600 text-lg mb-10">
-      Contact us today to schedule a site visit or request detailed pricing
-      information for our available units.
+      Whether you’re looking for high-return investments, construction-ready plots, or wellness-focused living, Aduri Group has the perfect project for you. <br />
+      📞 Call / WhatsApp: +91 83742 49705 <br />
+      🏡 Site Visits Available | Bank Loan Assistance | Limited Inventory
     </p>
 
     <div className="flex justify-center gap-5">

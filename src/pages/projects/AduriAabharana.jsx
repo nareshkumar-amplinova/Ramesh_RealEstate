@@ -30,7 +30,7 @@ import livingImg from "../../assets/gallery-3.png";
 import bedroomImg from "../../assets/gallery-4.png";
 
 
-const RiversideResidences = () => {
+const AdurisAabharana = () => {
   return (
     <>
       {/* ================= HERO ================= */}
@@ -50,17 +50,16 @@ const RiversideResidences = () => {
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="max-w-2xl text-white pt-16 pl-4 sm:pl-8 lg:pl-16">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-                Riverside Residences
+                Aduri’s Aabharana @ Yadadri
               </h1>
 
               <h2 className="text-xl lg:text-2xl text-gray-200 mb-6">
-                Luxury Waterfront Living in the Heart of the City
+                DTCP-Approved Open Plots Near Yadadri Temple
               </h2>
 
               <p className="text-gray-300 text-lg mb-12">
-                Experience the perfect blend of urban convenience and natural
-                serenity with premium waterfront apartments offering breathtaking
-                views and world-class amenities.
+                Construction-ready, Vaastu-compliant plots in a spiritually significant and fast-developing region near Hyderabad.<br/>
+                Divine Living | Smart Investment
               </p>
 
               <div className="flex gap-5">
@@ -536,4 +535,4 @@ const RiversideResidences = () => {
   );
 };
 
-export default RiversideResidences;
+export default AdurisAabharana;
