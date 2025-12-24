@@ -289,40 +289,38 @@ const Home = () => {
   </div>
 </section>
 
-{/* TESTIMONIALS */}
-<section className="pt-10 pb-20 bg-slate-50">
-  <div className="max-w-7xl mx-auto px-4 lg:px-8">
+{/* ================= TESTIMONIALS ================= */}
+<section className="pt-10 pb-10 bg-slate-50">
+  <div className="max-w-6xl mx-auto px-6">
 
     {/* Heading */}
-    <div className="text-center max-w-3xl mx-auto mb-20">
-      <h2 className="text-4xl font-bold text-slate-900 mb-4">
+    <div className="text-center max-w-3xl mx-auto mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
         What Our Clients Say
       </h2>
-      <p className="text-slate-600">
+      <p className="text-slate-600 text-sm md:text-base">
         Discover why our clients trust us with their real estate investment
         decisions
       </p>
     </div>
 
-    {/* Testimonials Grid */}
-    <div className="grid md:grid-cols-3 gap-12">
+    {/* ===== ROW 1 : 3 TESTIMONIALS ===== */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-14">
 
-      {/* Left */}
-      <div className="space-y-6 text-center md:text-left">
+      {/* Testimonial 1 */}
+      <div className="bg-white rounded-xl p-6 shadow-sm text-center space-y-5">
         <div className="text-primary">★★★★★</div>
-        <p className="text-slate-600 italic leading-relaxed">
-          “The amenities in this project are exceptional. The community spaces,
-          especially the landscaped gardens and clubhouse, exceeded my
-          expectations.”
+        <p className="text-slate-600 italic leading-relaxed text-sm">
+          “The amenities in this project are exceptional. The landscaped gardens
+          and clubhouse exceeded my expectations.”
         </p>
-
-        <div className="flex items-center gap-3 justify-center md:justify-start">
+        <div className="flex items-center justify-center gap-3">
           <img
             src="https://i.pravatar.cc/60?img=12"
             alt="Rajesh Kumar"
             className="h-10 w-10 rounded-full"
           />
-          <div>
+          <div className="text-left">
             <p className="font-semibold text-sm">Rajesh Kumar</p>
             <p className="text-xs text-slate-500">
               Business Owner, Hyderabad
@@ -331,21 +329,20 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Center Highlight */}
-      <div className="bg-slate-100 rounded-xl p-8 text-center space-y-6">
+      {/* Testimonial 2 (highlight) */}
+      <div className="bg-sky-100 rounded-xl p-8 shadow-sm text-center space-y-5">
         <div className="text-primary">★★★★★</div>
-        <p className="text-slate-700 italic leading-relaxed">
-          “The location is perfect for my family — close to schools, hospitals,
+        <p className="text-slate-700 italic leading-relaxed text-sm">
+          “The location is perfect for my family—close to schools, hospitals,
           and shopping centers. Truly worth every rupee!”
         </p>
-
-        <div className="flex items-center gap-3 justify-center">
+        <div className="flex items-center justify-center gap-3">
           <img
             src="https://i.pravatar.cc/60?img=47"
             alt="Priya Sharma"
             className="h-12 w-12 rounded-full"
           />
-          <div>
+          <div className="text-left">
             <p className="font-semibold text-sm">Priya Sharma</p>
             <p className="text-xs text-slate-500">
               IT Professional, Bangalore
@@ -354,21 +351,20 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Right */}
-      <div className="space-y-6 text-center md:text-left">
+      {/* Testimonial 3 */}
+      <div className="bg-white rounded-xl p-6 shadow-sm text-center space-y-5">
         <div className="text-primary">★★★★★</div>
-        <p className="text-slate-600 italic leading-relaxed">
-          “As a first-time homebuyer, I was nervous, but the sales team was
-          incredibly helpful throughout the process.”
+        <p className="text-slate-600 italic leading-relaxed text-sm">
+          “As a first-time homebuyer, the team guided me through every step.
+          The experience was smooth and transparent.”
         </p>
-
-        <div className="flex items-center gap-3 justify-center md:justify-start">
+        <div className="flex items-center justify-center gap-3">
           <img
             src="https://i.pravatar.cc/60?img=32"
             alt="Vikram Reddy"
             className="h-10 w-10 rounded-full"
           />
-          <div>
+          <div className="text-left">
             <p className="font-semibold text-sm">Vikram Reddy</p>
             <p className="text-xs text-slate-500">
               Software Engineer, Hyderabad
@@ -378,8 +374,59 @@ const Home = () => {
       </div>
 
     </div>
+
+    {/* ===== ROW 2 : 2 TESTIMONIALS (CENTERED) ===== */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+
+      {/* Testimonial 4 */}
+      <div className="bg-white rounded-xl p-6 shadow-sm text-center space-y-5">
+        <div className="text-primary">★★★★★</div>
+        <p className="text-slate-600 italic leading-relaxed text-sm">
+          “The gated community provides excellent security and facilities.
+          My children love the play areas and open spaces.”
+        </p>
+        <div className="flex items-center justify-center gap-3">
+          <img
+            src="https://i.pravatar.cc/60?img=5"
+            alt="Sunita Patel"
+            className="h-10 w-10 rounded-full"
+          />
+          <div className="text-left">
+            <p className="font-semibold text-sm">Sunita Patel</p>
+            <p className="text-xs text-slate-500">
+              Entrepreneur, Mumbai
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Testimonial 5 */}
+      <div className="bg-white rounded-xl p-6 shadow-sm text-center space-y-5">
+        <div className="text-primary">★★★★★</div>
+        <p className="text-slate-600 italic leading-relaxed text-sm">
+          “I purchased this property as an investment and the returns have been
+          impressive. Maintenance services are prompt and reliable.”
+        </p>
+        <div className="flex items-center justify-center gap-3">
+          <img
+            src="https://i.pravatar.cc/60?img=8"
+            alt="Anand Verma"
+            className="h-10 w-10 rounded-full"
+          />
+          <div className="text-left">
+            <p className="font-semibold text-sm">Anand Verma</p>
+            <p className="text-xs text-slate-500">
+              Retired Banker, Chennai
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
+
 
 {/* OVERALL CUSTOMER SATISFACTION */}
 <section className="pt-10 pb-20 bg-white">
