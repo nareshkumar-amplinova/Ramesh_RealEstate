@@ -46,23 +46,21 @@ const GoldenHeightsShad = () => {
         <div className="relative z-10 w-full">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="max-w-2xl text-white pt-16 pl-4 sm:pl-8 lg:pl-16">
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-                Aduri’s Golden Heights – Health Village Wellness Center
+              <h1 className="text-5xl lg:text-6xl font-bold mb-4">
+                Health Village Wellness Center
               </h1>
 
-              <h2 className="text-xl lg:text-2xl text-gray-200 mb-6">
+              <h3 className="text-lg lg:text-xl text-gray-200 mb-4">
                 Aduri’s Golden Heights – Health Village Wellness Center <br/>
                 Premium Wellness Township | Balanagar, Shadnagar
+              </h3>
 
-              </h2>
-
-              <p className="text-gray-300 text-lg mb-12">
-                MUDA Approved 75-Acre Gated Residential Wellness Community with Open Plots, Luxury Villas & Future Apartments. Featuring a dedicated Ayurveda & Wellness Hub, 51+ lifestyle amenities, and future-ready infrastructure in a high-growth corridor.<br/>
-                Price: ₹20,299 / sq. yd
-
-
+              <p className="text-gray-300 text-lg mb-4">
+                MUDA Approved 75-Acre Gated Residential Wellness Community with Open Plots, Luxury Villas & Future Apartments. Featuring a dedicated Ayurveda & Wellness Hub, 51+ lifestyle amenities, and future-ready infrastructure in a high-growth corridor.
               </p>
-
+              <h3 className="text-lg lg:text-xl text-gray-200 mb-6">
+                Price: ₹20,299 / sq. yd
+              </h3>
               <div className="flex gap-5">
                 <button className="bg-primary text-white px-8 py-3.5 rounded-md shadow-lg">
                   Get Pricing
@@ -268,37 +266,31 @@ const GoldenHeightsShad = () => {
         {
           img: microsoftImg,
           title: "MS Data Center",
-          dist: "5.2 km",
           desc: "A major digital infrastructure hub boosting residential and investment demand.",
         },
         {
           img: inorbitImg,
           title: "Proposed Regional Ring Road (RRR)",
-          dist: "3 km",
           desc: "Future-ready connectivity corridor enhancing long-term land value.",
         },
         {
           img: apolloImg,
           title: "Symbiosis University",
-          dist: "2.5 km",
           desc: "Upcoming educational institution attracting students, faculty, and residential growth.",
         },
         {
           img: schoolImg,
           title: "Pharma SEZs & Industrial Corridors",
-          dist: "2.8 km",
           desc: "Employment-driven zones supporting sustained real estate appreciation.",
         },
         {
           img: financialImg,
           title: "Shadnagar Town",
-          dist: "7 km",
           desc: "Well-developed town with markets, hospitals, schools, and daily conveniences.",
         },
         {
           img: lakeImg,
           title: "Shamshabad International Airport (RGIA)",
-          dist: "6.5 km",
           desc: "Smooth airport access supporting a premium lifestyle and investment appeal.",
         },
       ].map((item, i) => (
@@ -317,11 +309,6 @@ const GoldenHeightsShad = () => {
     <h4 className="font-semibold text-slate-900 mb-1">
       {item.title}
     </h4>
-
-    <div className="flex items-center gap-2 text-sm text-primary mb-2">
-      <FaLocationArrow className="w-3.5 h-3.5" />
-      <span>{item.dist}</span>
-    </div>
 
     <p className="text-sm text-slate-600 leading-relaxed">
       {item.desc}
@@ -422,22 +409,37 @@ const GoldenHeightsShad = () => {
           </h4>
 
           <form className="grid grid-cols-2 gap-4">
+            <div className="col-span-1">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Your Name
+        </label>
             <input
               type="text"
               placeholder="Your Name"
               className="border rounded-md px-4 py-2.5 text-sm col-span-1"
             />
+          </div>
+          <div className="col-span-1">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Phone Number
+        </label>
             <input
               type="text"
               placeholder="Phone Number"
               className="border rounded-md px-4 py-2.5 text-sm col-span-1"
             />
+          </div>
 
+          <div className="col-span-2">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Email Address
+        </label>
             <input
               type="email"
               placeholder="Email Address"
-              className="border rounded-md px-4 py-2.5 text-sm col-span-2"
+              className="w-full border rounded-md px-4 py-3 text-sm"
             />
+          </div>
 
             <select className="border rounded-md px-4 py-2.5 text-sm col-span-2 text-slate-500">
               <option>Preferred Visit Date</option>
@@ -495,22 +497,21 @@ const GoldenHeightsShad = () => {
           {/* LEFT CONTENT */}
           <div className="p-10 lg:p-14">
             <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
-              Ready to Invest in a Wellness-Focused Lifestyle Community?
-
+              Schedule a Site Visit
             </h2>
 
             <p className="text-slate-600 text-lg leading-relaxed mb-10 max-w-xl">
-              Schedule a site visit to experience Aduri’s Golden Heights – Health Village Wellness Center and secure your premium plot in a future-ready wellness township.
+              Experience our project firsthand. Schedule a site visit at your
+              convenient time and our representative will assist you.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <button className="bg-primary text-white px-8 py-3 rounded-lg font-medium shadow-sm hover:bg-primaryDark transition">
-                Request Site Visit
-
+                Book Site Visit
               </button>
 
               <button className="border border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-white transition">
-                📞 Call / WhatsApp: +91 83742 49705
+                Call Now
               </button>
             </div>
           </div>

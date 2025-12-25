@@ -191,7 +191,7 @@ const Contact = () => {
           Message
         </label>
         <textarea
-          rows="4"
+          rows="1"
           placeholder="Your message here..."
           className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/30"
         />

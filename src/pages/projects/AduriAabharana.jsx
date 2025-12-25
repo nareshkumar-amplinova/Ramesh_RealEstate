@@ -184,7 +184,7 @@ const AdurisAabharana = () => {
     </h3>
 
     {/* Cards */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
 
       {[
         {
@@ -272,37 +272,31 @@ const AdurisAabharana = () => {
         {
           img: microsoftImg,
           title: "Yadadri Temple",
-          dist: "5.2 km",
           desc: "Major spiritual destination driving residential and investment demand.",
         },
         {
           img: inorbitImg,
           title: "Aler Junction",
-          dist: "3 km",
           desc: "An important railway and road junction, improving regional accessibility.",
         },
         {
           img: apolloImg,
           title: "Rajapet",
-          dist: "2.5 km",
           desc: "Nearby town with daily conveniences and local connectivity.",
         },
         {
           img: schoolImg,
           title: "Mothkur",
-          dist: "2.8 km",
           desc: "Well-developed mandal with schools, markets, and healthcare facilities.",
         },
         {
           img: financialImg,
           title: "Kolamula Village",
-          dist: "7 km",
           desc: "Developing a residential locality to enhance land value appreciation.",
         },
         {
           img: lakeImg,
           title: "Yadadri Growth Corridor",
-          dist: "6.5 km",
           desc: "Emerging residential and spiritual development zone near Hyderabad.",
         },
       ].map((item, i) => (
@@ -321,11 +315,6 @@ const AdurisAabharana = () => {
     <h4 className="font-semibold text-slate-900 mb-1">
       {item.title}
     </h4>
-
-    <div className="flex items-center gap-2 text-sm text-primary mb-2">
-      <FaLocationArrow className="w-3.5 h-3.5" />
-      <span>{item.dist}</span>
-    </div>
 
     <p className="text-sm text-slate-600 leading-relaxed">
       {item.desc}
@@ -427,22 +416,37 @@ const AdurisAabharana = () => {
           </h4>
 
           <form className="grid grid-cols-2 gap-4">
+            <div className="col-span-1">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Your Name
+        </label>
             <input
               type="text"
               placeholder="Your Name"
               className="border rounded-md px-4 py-2.5 text-sm col-span-1"
             />
+          </div>
+          <div className="col-span-1">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Phone Number
+        </label>
             <input
               type="text"
               placeholder="Phone Number"
               className="border rounded-md px-4 py-2.5 text-sm col-span-1"
             />
+          </div>
 
+          <div className="col-span-2">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Email Address
+        </label>
             <input
               type="email"
               placeholder="Email Address"
-              className="border rounded-md px-4 py-2.5 text-sm col-span-2"
+              className="w-full border rounded-md px-4 py-3 text-sm"
             />
+          </div>
 
             <select className="border rounded-md px-4 py-2.5 text-sm col-span-2 text-slate-500">
               <option>Preferred Visit Date</option>

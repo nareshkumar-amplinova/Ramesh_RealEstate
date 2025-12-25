@@ -55,14 +55,14 @@ const GoldenHeightsSada = () => {
               </h1>
 
               <h2 className="text-xl lg:text-2xl text-gray-200 mb-6">
-                65-Acre DTCP Township | Mumbai NH-65
+                DTCP-Approved Residential Township | Mumbai NH-65
               </h2>
 
               <p className="text-gray-300 text-lg mb-12">
-                Highway-facing mega residential township near IIT Hyderabad, SEZs & industrial hubs. Perfect for both end-use and long-term investment. <br/>
-                Price: ₹20,299 / sq. yd
-
+                A landmark 65-acre DTCP-approved residential township strategically located on Mumbai National Highway (NH-65). Designed with modern infrastructure, wide internal roads, and green planning, offering excellent connectivity and long-term investment potential.
               </p>
+
+               
 
               <div className="flex gap-5">
                 <button className="bg-primary text-white px-8 py-3.5 rounded-md shadow-lg">
@@ -87,7 +87,7 @@ const GoldenHeightsSada = () => {
         Location Advantages
       </h2>
       <p className="text-slate-600 max-w-2xl mx-auto">
-        Strategic location offering excellent connectivity and convenience for residents
+        Strategically positioned on a major national highway, offering strong connectivity, daily convenience, and future growth potential.
       </p>
     </div>
 
@@ -104,9 +104,9 @@ const GoldenHeightsSada = () => {
     {[
       {
         icon: <FaRoad />,
-        title: "Near Highway/ORR",
+        title: "Highway-Facing Location (NH-65)",
         desc:
-          "Just 1.5 km from Outer Ring Road, providing excellent connectivity to major business districts and IT parks",
+          "Located directly on the Mumbai National Highway, ensuring seamless connectivity and high visibility.",
       },
       {
         icon: <FaSchool />,
@@ -116,21 +116,21 @@ const GoldenHeightsSada = () => {
       },
       {
         icon: <FaHospital />,
-        title: "Nearby Hospitals",
+        title: "Close to Sadasivapet Town",
         desc:
-          "2.5 km from Apollo Hospitals and 4 km from Care Hospitals, ensuring quick access to quality healthcare",
+          "Situated near Sadasivapet with access to schools, hospitals, markets, and daily needs.",
       },
       {
         icon: <FaBuilding />,
-        title: "IT Hubs",
+        title: "Near Major Industrial & SEZ Zones",
         desc:
-          "5 km from HITEC City and 7 km from Financial District, making it ideal for IT professionals",
+          "Surrounded by NIMZ SEZ, manufacturing units, and industrial corridors, driving demand.",
       },
       {
         icon: <FaShoppingCart />,
-        title: "Shopping & Entertainment",
+        title: "Educational & Institutional Proximity",
         desc:
-          "3 km from Inorbit Mall and 4.5 km from Forum Sujana Mall, offering premium shopping and entertainment options",
+          "Close to IIT Hyderabad, Gitam University, and Woxsen School of Business.",
       },
     ].map((item, index) => (
       <div key={index} className="flex items-start gap-5">
@@ -173,7 +173,7 @@ const GoldenHeightsSada = () => {
 
         <p className="text-slate-500 flex items-center gap-2 text-sm">
           <FaMapMarkerAlt className="text-primary" />
-          Project Location: Financial District Road, Gachibowli, Hyderabad – 500032
+          Project Location: Budhera, Sadasivapet, Sangareddy District – 550114
         </p>
       </div>
 
@@ -193,36 +193,38 @@ const GoldenHeightsSada = () => {
     </h3>
 
     {/* Cards */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
 
       {[
         {
-          icon: <FaPlane />,
-          title: "Airport",
-          subtitle: "Rajiv Gandhi International Airport",
-          distance: "25 km",
+          icon: <FaRoad />,
+          title: "Mumbai National Highway (NH-65)",
+          subtitle: "National Highway",
           progress: "w-[25%]",
         },
         {
-          icon: <FaTrain />,
-          title: "Railway Station",
-          subtitle: "Secunderabad Railway Station",
-          distance: "18 km",
+          icon: <FaBuilding />,
+          title: "Sadasivapet Town",
+          subtitle: "Approx. 10 mins",
           progress: "w-[40%]",
         },
         {
-          icon: <FaSubway />,
-          title: "Metro Station",
-          subtitle: "Raidurg Metro Station",
-          distance: "4.5 km",
+          icon: <FaSchool />,
+          title: "IIT Hyderabad",
+          subtitle: "Approx. 20 mins",
           progress: "w-[70%]",
         },
         {
-          icon: <FaBus />,
-          title: "Bus Terminal",
-          subtitle: "Gachibowli Bus Terminal",
-          distance: "3 km",
+          icon: <FaRoad />,
+          title: "Outer Ring Road (ORR)",
+          subtitle: "Approx. 25 mins",
           progress: "w-[85%]",
+        },
+        {
+          icon: <FaPlane />,
+          title: "RGI Airport",
+          subtitle: "Approx. 60–65 mins",
+          progress: "w-[25%]",
         },
       ].map((item, index) => (
         <div
@@ -273,39 +275,33 @@ const GoldenHeightsSada = () => {
       {[
         {
           img: microsoftImg,
-          title: "Microsoft Campus",
-          dist: "5.2 km",
-          desc: "One of the largest Microsoft development centers outside the US, employing thousands of IT professionals.",
+          title: "Mumbai National Highway (NH-65)",
+          desc: "Direct highway frontage providing unmatched connectivity and future appreciation.",
         },
         {
           img: inorbitImg,
-          title: "Inorbit Mall",
-          dist: "3 km",
-          desc: "Premium shopping destination with international brands, multiplex, food court and entertainment zones.",
+          title: "Woxsen School of Business",
+          desc: "Premier educational institution driving residential and rental demand.",
         },
         {
           img: apolloImg,
-          title: "Apollo Hospitals",
-          dist: "2.5 km",
-          desc: "Multi-specialty hospital with state-of-the-art facilities and emergency services available 24/7.",
+          title: "NIMZ SEZ",
+          desc: "Major industrial zone generating employment and infrastructure development.",
         },
         {
           img: schoolImg,
-          title: "Delhi Public School",
-          dist: "2.8 km",
-          desc: "CBSE-affiliated school offering quality education from kindergarten to higher secondary levels.",
+          title: "Mahindra & Mahindra Tractor Plant",
+          desc: "Large manufacturing facility contributing to regional economic growth.",
         },
         {
           img: financialImg,
-          title: "Financial District",
-          dist: "7 km",
-          desc: "Business hub housing major banks, financial institutions and corporate offices of multinational companies.",
+          title: "IIT Hyderabad",
+          desc: "Prestigious national institute boosting long-term real estate value.",
         },
         {
           img: lakeImg,
-          title: "Durgam Cheruvu Lake",
-          dist: "6.5 km",
-          desc: "Picturesque lake offering boating facilities, walking trails and recreational activities for families.",
+          title: "Sangareddy / Sadasivapet Growth Corridor",
+          desc: "Rapidly developing residential and commercial belt.",
         },
       ].map((item, i) => (
         <div key={i} className="space-y-4 max-w-sm mx-auto">
@@ -323,11 +319,6 @@ const GoldenHeightsSada = () => {
     <h4 className="font-semibold text-slate-900 mb-1">
       {item.title}
     </h4>
-
-    <div className="flex items-center gap-2 text-sm text-primary mb-2">
-      <FaLocationArrow className="w-3.5 h-3.5" />
-      <span>{item.dist}</span>
-    </div>
 
     <p className="text-sm text-slate-600 leading-relaxed">
       {item.desc}
@@ -414,12 +405,11 @@ const GoldenHeightsSada = () => {
       {/* LEFT CONTENT */}
       <div className="text-white">
         <h3 className="text-2xl font-bold mb-3">
-          Experience the Location Advantage
+          Ready to Invest in a Highway-Facing Mega Township?
         </h3>
 
         <p className="text-sm text-white/80 mb-6 max-w-md">
-          Schedule a site visit to experience the strategic location and
-          connectivity advantages of our project.
+          Schedule a site visit to explore Golden Heights – Budhera, Sadasivapet and secure your plot in a legally approved, infrastructure-ready township.
         </p>
 
         {/* FORM CARD */}
@@ -429,22 +419,37 @@ const GoldenHeightsSada = () => {
           </h4>
 
           <form className="grid grid-cols-2 gap-4">
+            <div className="col-span-1">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Your Name
+        </label>
             <input
               type="text"
               placeholder="Your Name"
               className="border rounded-md px-4 py-2.5 text-sm col-span-1"
             />
+          </div>
+          <div className="col-span-1">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Phone Number
+        </label>
             <input
               type="text"
               placeholder="Phone Number"
               className="border rounded-md px-4 py-2.5 text-sm col-span-1"
             />
+          </div>
 
+          <div className="col-span-2">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Email Address
+        </label>
             <input
               type="email"
               placeholder="Email Address"
-              className="border rounded-md px-4 py-2.5 text-sm col-span-2"
+              className="w-full border rounded-md px-4 py-3 text-sm"
             />
+          </div>
 
             <select className="border rounded-md px-4 py-2.5 text-sm col-span-2 text-slate-500">
               <option>Preferred Visit Date</option>

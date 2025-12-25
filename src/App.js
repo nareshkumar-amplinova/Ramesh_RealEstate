@@ -7,7 +7,7 @@ import FAQ from "./pages/FAQ's";
 import Contact from "./pages/Contact";
 
 // Project pages
-import GoldenHeightsRajapur from "./pages/projects/RiversideResidences";
+import GoldenHeightsRajapur from "./pages/projects/GoldenHeightsRajapur";
 import GoldenHeightsShad from "./pages/projects/GoldenHeightsShad";
 import GoldenHeightsSada from "./pages/projects/GoldenHeightsSada";
 import GoldenHeightsBudh from "./pages/projects/GoldenHeightsBudh";

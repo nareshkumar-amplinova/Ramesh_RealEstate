@@ -44,15 +44,15 @@ const GoldenHeightsBudh = () => {
         <div className="relative z-10 w-full">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="max-w-2xl text-white pt-16 pl-4 sm:pl-8 lg:pl-16">
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+              <h1 className="text-5xl lg:text-6xl font-bold mb-8">
                 Aduri’s Golden Heights – Patloor, Budhera
               </h1>
 
-              <h2 className="text-xl lg:text-2xl text-gray-200 mb-6">
+              <h2 className="text-xl lg:text-2xl text-gray-200 mb-4">
                 DTCP & RERA Approved Premium Open Plots | Sadasivapet
               </h2>
 
-              <p className="text-gray-300 text-lg mb-12">
+              <p className="text-gray-300 text-lg mb-8">
                 A premium 7-acre DTCP & RERA-approved open-plotted development located in the fast-growing corridor of Patloor, Budhera, Sadasivapet. Strategically positioned with excellent road visibility and seamless connectivity, making it ideal for high-ROI investment and future residential use.
               </p>
 
@@ -267,37 +267,31 @@ const GoldenHeightsBudh = () => {
         {
           img: microsoftImg,
           title: "Shankarpally–Momipet Road",
-          dist: "5.2 km",
           desc: "High-visibility corridor enhancing accessibility and investment appeal.",
         },
         {
           img: inorbitImg,
           title: "Mumbai National Highway (NH-65)",
-          dist: "3 km",
           desc: "Major highway offering fast connectivity and long-term growth potential.",
         },
         {
           img: apolloImg,
           title: "Sadasivapet Town",
-          dist: "2.5 km",
           desc: "Nearby town with schools, hospitals, markets, and daily amenities.",
         },
         {
           img: schoolImg,
           title: "Industrial Growth Belt",
-          dist: "2.8 km",
           desc: "Surrounding industrial units are driving employment and residential demand.",
         },
         {
           img: financialImg,
           title: "Residential Development Zone",
-          dist: "7 km",
           desc: "Emerging residential layouts are increasing land value appreciation.",
         },
         {
           img: lakeImg,
           title: "Hyderabad Access Corridor",
-          dist: "6.5 km",
           desc: "Well-connected routes provide smooth access to Hyderabad city.",
         },
       ].map((item, i) => (
@@ -316,11 +310,6 @@ const GoldenHeightsBudh = () => {
     <h4 className="font-semibold text-slate-900 mb-1">
       {item.title}
     </h4>
-
-    <div className="flex items-center gap-2 text-sm text-primary mb-2">
-      <FaLocationArrow className="w-3.5 h-3.5" />
-      <span>{item.dist}</span>
-    </div>
 
     <p className="text-sm text-slate-600 leading-relaxed">
       {item.desc}

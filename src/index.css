@@ -9,3 +9,13 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Add this to your index.css */
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+.mobile-menu-open {
+  overflow: hidden; /* Prevents the background from scrolling when menu is open */
+}

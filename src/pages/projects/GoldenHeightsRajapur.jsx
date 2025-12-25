@@ -11,6 +11,7 @@ import {
   FaTrain,
   FaSubway,
   FaBus,
+  FaHome,
 } from "react-icons/fa";
 
 import heroImage from "../../assets/download-1.png";
@@ -30,7 +31,7 @@ import livingImg from "../../assets/gallery-3.png";
 import bedroomImg from "../../assets/gallery-4.png";
 
 
-const RiversideResidences = () => {
+const GoldenHeightsRajapur = () => {
   return (
     <>
       {/* ================= HERO ================= */}
@@ -50,18 +51,20 @@ const RiversideResidences = () => {
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="max-w-2xl text-white pt-16 pl-4 sm:pl-8 lg:pl-16">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-                Riverside Residences
+                Aduri’s Golden Heights @ Rajapur
               </h1>
 
               <h2 className="text-xl lg:text-2xl text-gray-200 mb-6">
-                Luxury Waterfront Living in the Heart of the City
+                Premium Open Plots Near NH-44 | Shadnagar
               </h2>
 
-              <p className="text-gray-300 text-lg mb-12">
-                Experience the perfect blend of urban convenience and natural
-                serenity with premium waterfront apartments offering breathtaking
-                views and world-class amenities.
+              <p className="text-gray-300 text-lg mb-5">
+                DTCP & TS RERA Approved Plotted Development, Just 1 km from Hyderabad–Bangalore Highway (NH-44), Clear Title | Vaastu-Compliant | High Growth Investment Zone.
               </p>
+
+              <h2 className="text-xl lg:text-2xl text-gray-200 mb-6">
+                Starting from ₹13,799 / sq. yd
+              </h2>
 
               <div className="flex gap-5">
                 <button className="bg-primary text-white px-8 py-3.5 rounded-md shadow-lg">
@@ -86,7 +89,7 @@ const RiversideResidences = () => {
         Location Advantages
       </h2>
       <p className="text-slate-600 max-w-2xl mx-auto">
-        Strategic location offering excellent connectivity and convenience for residents
+        Strategically positioned for seamless connectivity, daily convenience, and long-term value.
       </p>
     </div>
 
@@ -103,33 +106,27 @@ const RiversideResidences = () => {
     {[
       {
         icon: <FaRoad />,
-        title: "Near Highway/ORR",
+        title: "Near NH-44 (Hyderabad–Bangalore Highway)",
         desc:
-          "Just 1.5 km from Outer Ring Road, providing excellent connectivity to major business districts and IT parks",
+          "Just 1 km from NH-44, offering fast access to Hyderabad and Bangalore.",
       },
       {
         icon: <FaSchool />,
-        title: "Close to Schools",
+        title: "Close to Shadnagar",
         desc:
-          "Within 3 km radius of prestigious educational institutions including Delhi Public School, Oakridge International, and Ryan International School",
+          "Located in a rapidly developing residential and industrial growth zone.",
       },
       {
         icon: <FaHospital />,
-        title: "Nearby Hospitals",
+        title: "Excellent Road Connectivity",
         desc:
-          "2.5 km from Apollo Hospitals and 4 km from Care Hospitals, ensuring quick access to quality healthcare",
+          "Well-connected internal roads with easy access to nearby towns and employment hubs.",
       },
       {
         icon: <FaBuilding />,
-        title: "IT Hubs",
+        title: "Future Infrastructure Growth",
         desc:
-          "5 km from HITEC City and 7 km from Financial District, making it ideal for IT professionals",
-      },
-      {
-        icon: <FaShoppingCart />,
-        title: "Shopping & Entertainment",
-        desc:
-          "3 km from Inorbit Mall and 4.5 km from Forum Sujana Mall, offering premium shopping and entertainment options",
+          "Surrounded by upcoming residential layouts, logistics zones, and commercial development.",
       },
     ].map((item, index) => (
       <div key={index} className="flex items-start gap-5">
@@ -172,10 +169,9 @@ const RiversideResidences = () => {
 
         <p className="text-slate-500 flex items-center gap-2 text-sm">
           <FaMapMarkerAlt className="text-primary" />
-          Project Location: Financial District Road, Gachibowli, Hyderabad – 500032
+          Rajapur, Near Shadnagar, Hyderabad – Telangana, 550914
         </p>
       </div>
-
     </div>
   </div>
 </section>
@@ -197,30 +193,30 @@ const RiversideResidences = () => {
       {[
         {
           icon: <FaPlane />,
-          title: "Airport",
+          title: "RGI Airport",
           subtitle: "Rajiv Gandhi International Airport",
-          distance: "25 km",
+          distance: "Approx. 45–50 mins",
           progress: "w-[25%]",
         },
         {
-          icon: <FaTrain />,
-          title: "Railway Station",
-          subtitle: "Secunderabad Railway Station",
-          distance: "18 km",
+          icon: <FaRoad />,
+          title: "NH-44 Highway",
+          subtitle: "National Highway 44",
+          distance: "1 km",
           progress: "w-[40%]",
         },
         {
-          icon: <FaSubway />,
-          title: "Metro Station",
-          subtitle: "Raidurg Metro Station",
+          icon: <FaHome />,
+          title: "Shadnagar Town",
+          subtitle: "Approx. 10–15 mins",
           distance: "4.5 km",
           progress: "w-[70%]",
         },
         {
-          icon: <FaBus />,
-          title: "Bus Terminal",
-          subtitle: "Gachibowli Bus Terminal",
-          distance: "3 km",
+          icon: <FaLocationArrow />,
+          title: "Outer Ring Road (ORR)",
+          subtitle: "Approx. 30–35 mins",
+          distance: "30km",
           progress: "w-[85%]",
         },
       ].map((item, index) => (
@@ -272,39 +268,33 @@ const RiversideResidences = () => {
       {[
         {
           img: microsoftImg,
-          title: "Microsoft Campus",
-          dist: "5.2 km",
-          desc: "One of the largest Microsoft development centers outside the US, employing thousands of IT professionals.",
+          title: "Shadnagar Industrial Area",
+          desc: "A fast-growing employment hub driving residential demand and land appreciation.",
         },
         {
           img: inorbitImg,
-          title: "Inorbit Mall",
-          dist: "3 km",
-          desc: "Premium shopping destination with international brands, multiplex, food court and entertainment zones.",
+          title: "Hyderabad–Bangalore Highway (NH-44)",
+          desc: "Just 1 km from the project, offering seamless connectivity to Hyderabad and Bangalore.",
         },
         {
           img: apolloImg,
-          title: "Apollo Hospitals",
-          dist: "2.5 km",
-          desc: "Multi-specialty hospital with state-of-the-art facilities and emergency services available 24/7.",
+          title: "Shadnagar Town",
+          desc: "Well-developed town with schools, hospitals, markets, and daily conveniences nearby.",
         },
         {
           img: schoolImg,
-          title: "Delhi Public School",
-          dist: "2.8 km",
-          desc: "CBSE-affiliated school offering quality education from kindergarten to higher secondary levels.",
+          title: "Educational Institutions Zone",
+          desc: "Multiple schools and colleges within short driving distance, ideal for family living.",
         },
         {
           img: financialImg,
-          title: "Financial District",
-          dist: "7 km",
-          desc: "Business hub housing major banks, financial institutions and corporate offices of multinational companies.",
+          title: "Rajiv Gandhi International Airport (RGIA)",
+          desc: "Easy access via NH-44 and ORR, supporting long-term investment value.",
         },
         {
           img: lakeImg,
-          title: "Durgam Cheruvu Lake",
-          dist: "6.5 km",
-          desc: "Picturesque lake offering boating facilities, walking trails and recreational activities for families.",
+          title: "Outer Ring Road (ORR) Connectivity",
+          desc: "Quick access to ORR enables smooth travel to IT corridors and key Hyderabad locations.",
         },
       ].map((item, i) => (
         <div key={i} className="space-y-4 max-w-sm mx-auto">
@@ -323,10 +313,7 @@ const RiversideResidences = () => {
       {item.title}
     </h4>
 
-    <div className="flex items-center gap-2 text-sm text-primary mb-2">
-      <FaLocationArrow className="w-3.5 h-3.5" />
-      <span>{item.dist}</span>
-    </div>
+   
 
     <p className="text-sm text-slate-600 leading-relaxed">
       {item.desc}
@@ -413,12 +400,11 @@ const RiversideResidences = () => {
       {/* LEFT CONTENT */}
       <div className="text-white">
         <h3 className="text-2xl font-bold mb-3">
-          Experience the Location Advantage
+          Ready to Invest in a High-Growth Location?
         </h3>
 
         <p className="text-sm text-white/80 mb-6 max-w-md">
-          Schedule a site visit to experience the strategic location and
-          connectivity advantages of our project.
+          Schedule a site visit to explore Aduri’s Golden Heights @ Rajapur and secure your premium plot at an early-stage price.
         </p>
 
         {/* FORM CARD */}
@@ -428,22 +414,37 @@ const RiversideResidences = () => {
           </h4>
 
           <form className="grid grid-cols-2 gap-4">
+            <div className="col-span-1">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Your Name
+        </label>
             <input
               type="text"
               placeholder="Your Name"
               className="border rounded-md px-4 py-2.5 text-sm col-span-1"
             />
+          </div>
+          <div className="col-span-1">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Phone Number
+        </label>
             <input
               type="text"
               placeholder="Phone Number"
               className="border rounded-md px-4 py-2.5 text-sm col-span-1"
             />
+          </div>
 
+          <div className="col-span-2">
+        <label className="block text-sm font-medium text-slate-700 mb-1">
+          Email Address
+        </label>
             <input
               type="email"
               placeholder="Email Address"
-              className="border rounded-md px-4 py-2.5 text-sm col-span-2"
+              className="w-full border rounded-md px-4 py-3 text-sm"
             />
+          </div>
 
             <select className="border rounded-md px-4 py-2.5 text-sm col-span-2 text-slate-500">
               <option>Preferred Visit Date</option>
@@ -536,4 +537,4 @@ const RiversideResidences = () => {
   );
 };
 
-export default RiversideResidences;
+export default GoldenHeightsRajapur;

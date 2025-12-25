@@ -11,9 +11,10 @@ import gallery3 from "../assets/gallery-3.png";
 import gallery4 from "../assets/gallery-4.png";
 import gallery5 from "../assets/gallery-5.png";
 import gallery6 from "../assets/gallery-6.png";
-
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
       {/* HERO */}
@@ -38,23 +39,37 @@ const Home = () => {
           Aduri Group Projects
         </h1>
 
-        <h2 className="text-xl lg:text-2xl font-medium text-gray-200 mb-6">
+        <h2 className="text-xl lg:text-2xl font-medium text-gray-200 mb-4">
           Building Trusted Landmarks. Creating Future-Ready Communities.
         </h2>
 
         <p className="text-gray-300 text-lg leading-relaxed mb-12">
           Experience premium plotted developments across Telangana with DTCP / RERA approvals, clear titles, and high-growth locations.<br/>
-          ✔ Open Plots | ✔ Wellness Townships | ✔ Highway-Facing Projects | ✔ Ideal for Investment & Construction
+          ✔ Open Plots | ✔ Wellness Townships <br/> ✔ Highway-Facing Projects | ✔ Ideal for Investment & Construction
         </p>
 
         <div className="flex gap-5">
-          <button className="bg-primary hover:bg-primaryDark text-white px-8 py-3.5 rounded-md shadow-lg transition">
-            View Projects
-          </button>
+          <button
+  onClick={() => {
+    document
+      .getElementById("premium-projects")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="bg-primary hover:bg-primaryDark text-white px-8 py-3.5 rounded-md shadow-lg transition"
+>
+  View Projects
+</button>
+<button
+  onClick={() => {
+    document
+      .getElementById("site-visit")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="bg-white text-primary border border-primary px-8 py-3.5 rounded-md shadow-lg hover:bg-slate-50 transition"
+>
+  Book Site Visit
+</button>
 
-          <button className="bg-white text-primary border border-primary px-8 py-3.5 rounded-md shadow-lg hover:bg-slate-50 transition">
-            Book Site Visit
-          </button>
         </div>
       </div>
     </div>
@@ -110,7 +125,9 @@ const Home = () => {
   </section>
 
      {/* ================= EXPERIENCE ================= */}
-<section className="pt-10 pb-14 bg-slate-50">
+<section 
+id="premium-projects"
+className="pt-10 pb-14 bg-slate-50">
   <div className="max-w-7xl mx-auto px-4 lg:px-8">
 
     {/* Heading */}
@@ -179,40 +196,55 @@ const Home = () => {
       >
         {[
           {
-            img: livingImage,
-            title: "Aduri’s Golden Heights @ Rajapur",
-            desc:
-              "Premium Open Plots | Near NH-44, Shadnagar. DTCP & TS RERA Approved plotted development just 1 km from Hyderabad–Bangalore Highway. Starting from ₹13,799 / sq. yd",
-            btn: "View Project",
-          },
-          {
-            img: amenitiesImage,
-            title: "Golden Heights – Health Village, Shadnagar",
-            desc:
-              "75-Acre Wellness Township | Open Plots, Villas & Apartments. A landmark health-focused gated community featuring Ayurveda & Wellness Hub, 51+ lifestyle amenities, and future-ready infrastructure. Price: ₹20,299 / sq. yd",
-            btn: "View Project",
-          },
-          {
-            img: viewImage,
-            title: "Golden Heights – Budhera, Sadasivapet",
-            desc:
-              "65-Acre DTCP Township | Mumbai NH-65 Highway-facing mega residential township near IIT Hyderabad, SEZs & industrial hubs. Perfect for both end-use and long-term investment. Price: ₹20,299 / sq. yd",
-            btn: "View Project",
-          },
-          {
-            img: lifestyleImage,
-            title: "Golden Heights – Patloor, Budhera",
-            desc:
-              "6DTCP & RERA Approved Open Plots | High ROI Zone Compact 7-acre project with excellent road visibility on Shankarpally–Momipet Road.Best suited for investors, weekend homes & future villas.Limited Plots Available",
-            btn: "View Project",
-          },
-          {
-            img: lifestyleImage,
-            title: "Aduri’s Aabharana @ Yadadri",
-            desc:
-              "DTCP-Approved Open Plots Near Yadadri Temple Construction-ready, Vaastu-compliant plots in a spiritually significant and fast-developing region near Hyderabad. Divine Living | Smart Investment",
-            btn: "View Project",
-          },
+  img: livingImage,
+  title: "Aduri’s Golden Heights @ Rajapur",
+  subtitle: "Premium Open Plots | Near NH-44, Shadnagar",
+  desc:
+    "DTCP & TS RERA Approved plotted development just 1 km from Hyderabad–Bangalore Highway.",
+  price: "Starting from ₹13,799 / sq. yd",
+  btn: "View Project",
+  path: "/projects/rajapur",
+},
+{
+  img: amenitiesImage,
+  title: "Golden Heights – Health Village, Shadnagar",
+  subtitle: "75-Acre Wellness Township | Open Plots, Villas & Apartments",
+  desc:
+    "A landmark health-focused gated community featuring Ayurveda & Wellness Hub,51+ lifestyle amenities, and future-ready infrastructure.",
+  price: "Starting from ₹20, 299 / sq. yd",
+  btn: "View Project",
+  path: "/projects/shadnagar",
+},
+{
+  img: viewImage,
+  title: "Golden Heights – Budhera, Sadasivapet",
+  subtitle: "65-Acre DTCP Township | Mumbai NH-65",
+  desc:
+    "Highway-facing mega residential township near IIT Hyderabad, SEZs & industrial hubs. Perfect for both end-use and long-term investment.",
+  price: "Starting from ₹20,299 / sq. yd",
+  btn: "View Project",
+  path: "/projects/sadasivapet",
+},         
+{
+  img: lifestyleImage,
+  title: "Golden Heights – Patloor, Budhera",
+  subtitle: "DTCP & RERA Approved Open Plots | High ROI Zone",
+  desc:
+    "Compact 7-acre project with excellent road visibility on Shankarpally–Momipet Road. Best suited for investors, weekend homes & future villas.",
+  price: "Limited Plots Available",
+  btn: "View Project",
+  path: "/projects/budhera",
+},
+{
+  img: livingImage,
+  title: "Aduri’s Aabharana @ Yadadri",
+  subtitle: "DTCP-Approved Open Plots Near Yadadri Temple",
+  desc:
+    "Construction-ready, Vaastu-compliant plots in a spiritually significant and fast-developing region near Hyderabad.",
+  price: "Divine Living | Smart Investment",
+  btn: "View Project",
+  path: "/projects/aabharana",
+},
         ].map((item, i) => (
           <div
             key={i}
@@ -227,18 +259,30 @@ const Home = () => {
 
             {/* Content */}
             <div className="p-5 text-center flex flex-col h-full">
-              <h3 className="text-base font-semibold text-primary mb-2 min-h-[44px]">
-                {item.title}
-              </h3>
+  <h3 className="text-base font-semibold text-primary mb-2">
+    {item.title}
+  </h3>
 
-              <p className="text-sm text-slate-600 leading-relaxed line-clamp-4 min-h-[88px]">
-                {item.desc}
-              </p>
+  <p className="text-sm font-medium text-slate-700 mb-1">
+    {item.subtitle}
+  </p>
 
-              <button className="mt-auto bg-primary text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-primaryDark transition">
-                {item.btn}
-              </button>
-            </div>
+  <p className="text-sm text-slate-600 leading-relaxed mb-3">
+    {item.desc}
+  </p>
+
+  <p className="text-sm font-semibold text-primary mb-4">
+    {item.price}
+  </p>
+
+  <button
+  onClick={() => navigate(item.path)}
+  className="mt-auto bg-primary text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-primaryDark transition"
+>
+  {item.btn}
+</button>
+</div>
+
           </div>
         ))}
       </div>
@@ -479,7 +523,9 @@ const Home = () => {
 </section>
 
 {/* BOOK A SITE VISIT */}
-<section className="pt-10 pb-10 bg-slate-50">
+<section 
+ id="site-visit"
+className="pt-10 pb-10 bg-slate-50">
   <div className="max-w-7xl mx-auto px-4 lg:px-8 space-y-16">
 
     {/* TOP BANNER */}
@@ -502,13 +548,19 @@ const Home = () => {
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center">
-          <button className="bg-primary px-6 py-3 rounded-md font-medium shadow">
+          <button 
+          onClick={() => navigate("/contact")}
+          className="bg-primary px-6 py-3 rounded-md font-medium shadow">
             Call Now
           </button>
-          <button className="bg-emerald-600 px-6 py-3 rounded-md font-medium shadow">
+          <button 
+          onClick={() => navigate("/contact")}
+          className="bg-emerald-600 px-6 py-3 rounded-md font-medium shadow">
             WhatsApp Now
           </button>
-          <button className="bg-white text-primary px-6 py-3 rounded-md font-medium shadow">
+          <button 
+          onClick={() => navigate("/contact")}
+          className="bg-white text-primary px-6 py-3 rounded-md font-medium shadow">
             Enquire Now
           </button>
         </div>
@@ -701,11 +753,19 @@ const Home = () => {
     </p>
 
     <div className="flex justify-center gap-5">
-      <button className="bg-primary hover:bg-primaryDark text-white px-8 py-3.5 rounded-md font-medium shadow transition">
+      <button 
+      onClick={() => navigate("/contact")}
+      className="bg-primary hover:bg-primaryDark text-white px-8 py-3.5 rounded-md font-medium shadow transition">
         Get Pricing
       </button>
 
-      <button className="border border-primary text-primary px-8 py-3.5 rounded-md font-medium hover:bg-slate-50 transition">
+      <button 
+      onClick={() => {
+    document
+      .getElementById("site-visit")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }}
+      className="border border-primary text-primary px-8 py-3.5 rounded-md font-medium hover:bg-slate-50 transition">
         Book Site Visit
       </button>
     </div>
